@@ -1,0 +1,71 @@
+Report_02
+For this assignment, I used while loop, for loop and string expression.
+While loop repeatedly executes a target statement as long as a given condition is true.
+For loop has the ability to iterate over the items of any sequence, such as a list or a string.
+A regular expression is a special sequence of characters that helps you match or find other strings or sets of strings, using a specialized syntax held in a pattern.
+
+I import regular expression at first, then set "expr" as my input.
+Then I use "split" characteror to return a list of words of the string.
+Put '+', '-', '*', '/' in operators.
+Set for loop, use find characteror to find i in operators which i is one of the four algorithm.
+If op not equal -1, that means we find what we want in "operators", and then break.
+If op equal 1, that means you put a invalid operator, so you should try again.
+Use find characteror to find algorithm, if you can't find -1, then use digit[0] and digit[1] to do math operation.
+At last, print the result with "=".
+
+For the discussion problem, I have a try, but it seems doesn't work.
+
+'''
+import re
+
+expr = input('Enter the expression: ')
+
+
+expr = '(12+8)*(6-4)'
+
+operators = ['(', ')', '+', '-', '*', '/']
+oper1, oper2, oper3, oper4, oper5, oper6 = [], [], [], [], [], []
+
+for j in range(len(expr)):
+    op = expr.find(operators[0],j, len(expr))
+    if op != -1:
+        oper1.append(op)
+oper1 = list(set(oper1))
+
+for j in range(len(expr)):
+    op = expr.find(operators[1],j, len(expr))
+    if op != -1:
+        oper2.append(op)
+oper2 = list(set(oper2))
+
+for j in range(len(expr)):
+    op = expr.find(operators[2],j, len(expr))
+    if op != -1:
+        oper3.append(op)
+oper3 = list(set(oper3))
+
+for j in range(len(expr)):
+    op = expr.find(operators[3],j, len(expr))
+    if op != -1:
+        oper4.append(op)
+oper4 = list(set(oper4))
+
+for j in range(len(expr)):
+    op = expr.find(operators[4],j, len(expr))
+    if op != -1:
+        oper5.append(op)
+oper5 = list(set(oper5))
+
+for j in range(len(expr)):
+    op = expr.find(operators[5],j, len(expr))
+    if op != -1:
+        oper6.append(op)
+oper6 = list(set(oper6))
+
+digit = re.split('\D', expr)
+while '' in digit:
+    digit.remove('')
+
+print(oper1, oper2, oper3, oper4, oper5, oper6)
+'''
+This is what I tried. 
