@@ -1,0 +1,13 @@
+The most of solution techniques I used in this program are functions.
+I use validity_gene, match_gene, reverse_gene，long_gene, order_gene_len and longest_match during the whole program.
+Also, I use replace code(g = gene.replace)
+The most important thing for "function" is "return". I mixed up return with print.
+In for loop, if your range of the operation is a to b. You must use (a,b+1).
+And in project 5, you must start your loop with n equal 0. It's easy to run your code and convenient to check your mistakes.
+
+
+My questions:
+1. In project 5, "if validity_gene(gene1) == 'valid' and validity_gene(gene2) == 'valid':"
+Do we need to make the length of gene1 equal gene2? Or the longest gene have something match the shortest gene.
+2. In project 7, "print('total number of matches: ', total_matches)"
+What should we return? The total number of matches or the total matches? If we need total matches, then use list.append
