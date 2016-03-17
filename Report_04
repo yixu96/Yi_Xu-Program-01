@@ -1,0 +1,9 @@
+The most of solution techniques I used in this program are functions.
+I use simpleExpressionIsValid, evaluateSimpleExpression during the whole program.
+Also, I use for loop and if/elif/else function.
+
+Important variables:
+1.lis = stringin.split(i) Use string to translate and split.
+2.result = eval('%d%s%d'%(float(digit[0]), i, float(digit[1])))
+%s is used as a placeholder for string values you want inject into a formatted string.
+%d is used as a placeholder for numeric or decimal values.
