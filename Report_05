@@ -1,0 +1,19 @@
+For the program 05, we are asked to set a virtual world by python.
+We set up a RPG game, which we have a hero, a monster and many other items like food, armor, task_item, etc.
+During the program, the hero can go upstairs and downstairs, also, he can become much stronger by picking up the treasure.
+Also, we set up some shortcut key for each action, like move to the left with "h" and remove armor with "A".
+
+I have the following methods beside the __init__ method.
+Look_at(), move_to(position), inventory() and drop(index), etc.
+For the drop(index), it makes the player drop the item with the corresponding index on the inventor list.
+This method returns a string indicating whether the operation was successful.
+
+I have one question:
+def pickup(self, treasure):
+  if treasure != "gold":
+    self.inventory.append(treasure)
+  else:
+    self.gold += 1
+
+I can't understand why I can't use the append here. I'm very confused about that.
+I look for the function online, but the example they provided are successful used the append.
