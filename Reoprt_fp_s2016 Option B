@@ -1,0 +1,26 @@
+For this program, I try to detect fraud in a dataset by examining the last digits of number s in the dataset.
+We are asked to read and clean Iranian election data, make a histogram, plot election data, smaller samples have more variation
+comparing variation of samples, comparing variation of samples and interpret my result.
+
+def ones_and_tens_digit_histogram(numbers)
+I define and use result, num1 and num2 for the list. After that, I use a for loop to make the code run easily,
+And the sum of result is the final result, return it at the end of the loop.
+
+
+
+Important variables:
+1. def plot_iranian_least_digits_histogram(histogram)
+2. def plot_distribution_by_sample_size
+3. def mean_squared_error(numbers1, numbers2):
+4.     l = len(numbers1)
+    ds = []
+    for i in range(l):
+        ds.append((numbers1[i] - numbers2[i]) ** 2)
+    MSE = sum(ds) / l
+    return MSE
+5.def compare_iranian_mse_to_samples(iranian_mse, number_of_iranian_samples)
+
+
+For this final program, I have one problem:
+When I use the first function to use the US file, some people in some areas have no record for voting.
+I don't know whether should I delete them or set up them as O, I choose to set up them us 0.
